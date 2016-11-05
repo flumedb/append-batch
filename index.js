@@ -1,4 +1,4 @@
-
+'use strict'
 
 module.exports = function (append) {
 
@@ -12,9 +12,9 @@ module.exports = function (append) {
 
     var values = []
     _queue.forEach(function (e) {
-      if(Array.isArray(e))
-        e.forEach(function (e) { value.push(e) })
-      else values.push(e)
+      if(Array.isArray(e.value))
+        e.value.forEach(function (e) { values.push(e) })
+      else values.push(e.value)
     })
 
     append(values, function (err, max) {
