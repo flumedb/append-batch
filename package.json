@@ -2,10 +2,10 @@
   "name": "append-batch",
   "description": "",
   "version": "0.0.1",
-  "homepage": "https://github.com/dominictarr/append-batch",
+  "homepage": "https://github.com/flumedb/append-batch",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dominictarr/append-batch.git"
+    "url": "git://github.com/flumedb/append-batch.git"
   },
   "dependencies": {},
   "devDependencies": {},
