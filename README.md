@@ -15,7 +15,7 @@ var Append = require('append-batch')
 var timestamp = require('monotonic-timestamp')
 var db = level(path...) //example with leveldb.
 
-var append = function (batch, cb) {
+var append = Append(function (batch, cb) {
   var ops = []
 
   function add (value) {
@@ -31,7 +31,7 @@ var append = function (batch, cb) {
 
 //append a single value
 append({foo: 'bar'}, function (err) {
-  //call append with a batch to get 
+  //the value is definitely written by now
 })
 
 ```
